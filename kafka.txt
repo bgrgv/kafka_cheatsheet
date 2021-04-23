@@ -3,3 +3,6 @@ View all topics : kafka-topics --list --zookeeper localhost:2181
 View Messages   : kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic search_ai.search_ai.hospital_flat_180321 --property print.key=true
 Start Kakfa     : bin/kafka-server-start.sh config/server.properties
 Start connect   : bin/connect-distributed.sh config/connect-distributed.properties
+
+
+set home        : export PATH="/path/to/dir:$PATH"
