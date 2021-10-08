@@ -8,3 +8,4 @@ Start connect   : bin/connect-distributed.sh config/connect-distributed.properti
 set home        : export PATH="/path/to/dir:$PATH"
 install plugin  :  confluent-hub install confluentinc/kafka-connect-elasticsearch:5.4.0 --component-dir /usr/share/confluent-hub-components --worker-configs /home/ubuntuadmin/pipeline/kafka_2.12-2.7.0/config/server.properties
 
+Add a connector : $ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" localhost:8083/connectors/ -d @file.json
